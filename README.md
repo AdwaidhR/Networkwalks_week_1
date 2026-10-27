@@ -1,50 +1,72 @@
 # NetworkWalks Week 1 – Cybersecurity Lab Setup
 
-## Project Overview
-This project documents the setup of a cybersecurity lab environment using VirtualBox and Kali Linux as part of the NetworkWalks Week 1 project.
+## Overview
 
-## Lab Configuration
-- **Virtualization:** Oracle VirtualBox
-- **Attacking Machine:** Kali Linux 2026.3
-- **Network Type:** NAT Network
-- **Network Subnet:** `10.0.0.0/24`
-- **Kali Linux IP:** `10.0.0.2/24`
-- **Gateway:** `10.0.0.1`
-- **Internet Connectivity:** Verified using `ping -c 4 google.com`
-- **Shared Folder:** Host Downloads folder mounted in Kali Linux
-- **Shared Clipboard:** Bidirectional
-- **Drag and Drop:** Bidirectional
-- **Snapshot:** NetworkWalks Week 1 - Initial Setup
+This repository documents my Week 1 cybersecurity lab setup using Oracle VirtualBox and Kali Linux as part of the NetworkWalks program.
+
+The goal was to configure a virtual lab environment, establish network connectivity, enable host–VM file sharing, and create a snapshot for recovery.
+
+## Lab Environment
+
+| Component | Configuration |
+|---|---|
+| Hypervisor | Oracle VirtualBox |
+| Operating System | Kali Linux 2026.3 |
+| Network Mode | NAT Network |
+| Network Subnet | `10.0.0.0/24` |
+| Kali Linux IP | `10.0.0.2/24` |
+| Default Gateway | `10.0.0.1` |
+| DNS Servers | `8.8.8.8`, `1.1.1.1` |
+| Shared Folder | Host Downloads folder |
+| Shared Clipboard | Bidirectional |
+| Drag and Drop | Bidirectional |
+| Snapshot | NetworkWalks Week 1 - Initial Setup |
 
 ## Tasks Completed
-1. Installed and configured VirtualBox.
-2. Imported the Kali Linux virtual machine.
-3. Configured the NAT Network.
-4. Assigned the required static IP address.
-5. Verified internet connectivity.
-6. Enabled and tested the shared folder.
-7. Configured clipboard and drag-and-drop.
-8. Created a VirtualBox snapshot.
 
-## Screenshots
+- Set up the Kali Linux virtual machine in VirtualBox.
+- Configured a NAT Network for the lab environment.
+- Assigned a static IPv4 address to Kali Linux.
+- Verified internet connectivity using `ping`.
+- Configured a shared folder between the host and virtual machine.
+- Enabled bidirectional shared clipboard and drag-and-drop.
+- Created a VirtualBox snapshot to preserve the initial lab configuration.
 
-### 1. Kali IP Address and Internet Connectivity
-![Kali IP and Internet](screenshots/01-kali-ip-internet.png)
+## Screenshots and Evidence
+
+### 1. Kali Linux IP Address and Internet Connectivity
+
+![Kali Linux IP address and internet connectivity](kali-ip-internet.png)
 
 ### 2. VirtualBox Network Configuration
-![VirtualBox Network](screenshots/02-virtualbox-network.png)
 
-### 3. Shared Folder
-![Shared Folder](screenshots/03-shared-folder.png)
+![VirtualBox network configuration](virtualbox-network.png)
 
-### 4. Clipboard and Drag-and-Drop
-![Clipboard and Drag-and-Drop](screenshots/04-clipboard-dragdrop.png)
+### 3. Shared Folder and Snapshot
 
-### 5. VirtualBox Snapshot
-![VirtualBox Snapshot](screenshots/05-snapshot.png)
+![Shared folder and snapshot evidence](shared-folder-snapshot.png)
+
+### 4. Shared Clipboard and Drag-and-Drop
+
+![Shared clipboard and drag-and-drop settings](clipboard-drag-drop.png)
+
+### 5. Kali Linux IPv4 Settings
+
+![Kali Linux IPv4 configuration](kali-ipv4-settings.png)
 
 ## Learning Outcomes
-- Learned to configure a Kali Linux virtual machine.
-- Practiced static IP configuration and network connectivity testing.
+
+- Gained practical experience with VirtualBox and Kali Linux.
+- Learned to configure a virtual network and static IPv4 settings.
+- Practiced basic network connectivity verification.
 - Configured file sharing between the host and virtual machine.
-- Learned to create and manage VirtualBox snapshots.
+- Learned the importance of snapshots for lab recovery.
+
+## Conclusion
+
+Successfully configured the initial Kali Linux cybersecurity lab environment and documented the setup with screenshots. This environment provides a foundation for further networking and cybersecurity practical exercises.
+
+---
+
+**Program:** NetworkWalks  
+**Week:** 1 – Lab Setup
